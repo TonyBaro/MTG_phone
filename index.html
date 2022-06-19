@@ -9,7 +9,17 @@
 </head>
 <body style="width:100vw; height: 100vh;">
     <div id="player_page" class="page">
-        <button onclick="seeSettings()">Settings</button>
+        <div class="tokens">
+
+        </div>
+        <div class="status">
+            <button onclick="seeSettings()">Settings</button>
+            <div class="health">
+                <img class="math" onclick="loseHealth()" src="images\minus.png" alt="minus">
+                <p id="phealth">00</p>
+                <img class="math"  onclick="addHealth()" src="images\plus.png" alt="plus">
+            </div>
+        </div>
 
     </div>
     <div class="settings" style="width:50%; height:100%">

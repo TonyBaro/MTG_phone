@@ -1,5 +1,13 @@
 console.log ('hello world')
 
+var health= 40
+
+function drawHealth(){
+    document.getElementById('phealth').innerHTML=`${health}`
+}
+
+drawHealth()
+
 function pageColor(){
     color= document.getElementById('page_color').value
     console.log(color)
@@ -14,4 +22,14 @@ function seeSettings(){
 function closeSettings(){
     document.querySelector('.settings').style.left = "-50%"
     
+}
+
+function addHealth(){
+    health ++
+    drawHealth()
+}
+
+function loseHealth(){
+    health --
+    drawHealth()
 }
